@@ -20,6 +20,10 @@ class Man:
         print("this=" + str(this))
         print("name=" + this.name)
         print("age=" + str(age))
+        this.__hoge1("aaa")
+
+    def __hoge1(self,str):
+        print("private method:" + str)
 
 
     @staticmethod
@@ -36,5 +40,9 @@ m.hello()
 m.goodbye()
 m.hoge(2)
 m.hoge2('hoge2')
+
+
 Man.hoge2('hoge2')
 Man.cls_method('hoge3')
+
+# m.__hoge1("a")

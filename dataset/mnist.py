@@ -34,6 +34,12 @@ test_num = 10000
 img_dim = (1, 28, 28)
 img_size = 28 * 28
 
+__hoge1 = 'abc'
+
+def __hoge2(str):
+    print("mnist.__hoge2:" + str)
+
+
 
 def _download(file_name):
     file_path = dataset_dir + "/" + file_name
